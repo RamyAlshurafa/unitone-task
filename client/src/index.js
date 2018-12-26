@@ -8,7 +8,6 @@ import * as serviceWorker from './serviceWorker';
 import EmailsStore from './stores/EmailsStore'
 
 const Root = (
-
   <Provider EmailsStore={EmailsStore}>
     <App />
   </Provider>
