@@ -6,9 +6,10 @@ import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 import EmailsStore from './stores/EmailsStore';
+import UserInfoStore from './stores/UserInfoStore';
 
 const Root = (
-  <Provider EmailsStore={EmailsStore}>
+  <Provider EmailsStore={EmailsStore} UserInfoStore={UserInfoStore}>
     <App />
   </Provider>
 );
