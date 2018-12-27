@@ -26,7 +26,8 @@
     "eslint": "eslint src/. test/. --config .eslintrc.json",
     "start": "node src/",
     "mocha": "mocha test/ --recursive --exit",
-    "dev": "nodemon src/"
+    "dev": "nodemon src/",
+    "build:db": "NODE_ENV=build DEBUG=Fake-Data  node src/fake_data/build_emails_data.js "
   },
   "dependencies": {
     "body-parser": "^1.18.3",
