@@ -32,12 +32,12 @@ class EmailsStore {
 
   // get the count of new emails
   @computed get newEmailsCount() {
-    return this.emails.filter(item => item.new).length;
+    return this.emails && this.emails.filter(item => item.new).length;
   }
 
   // get the count of all emails
   @computed get totalEmailsCount() {
-    return this.emails.length;
+    return this.emails && this.emails.length;
   }
 
   // fetch emails data from backend
