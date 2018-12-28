@@ -52,7 +52,7 @@ export const EmailSummaryWrapper = styled.div`
     if (props.active) {
       return '#57a2ff6b';
     } if (props.new) {
-      return '#e6e6e6a3';
+      return '#e6e6e647';
     }
     return '#fff';
   }}
