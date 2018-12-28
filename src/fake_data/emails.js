@@ -1,3 +1,4 @@
+// Define fake Emails data as array
 module.exports = [{
   from: 'Ramy Al Shurafa',
   title: 'Fake email title',

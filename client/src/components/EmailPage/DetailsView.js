@@ -14,7 +14,9 @@ import {
 class EmailDetails extends Component {
   render() {
     const { EmailsStore: { activeEmailIndex, emails } } = this.props;
+    // get the active email
     const activeEmail = emails[activeEmailIndex];
+    // get the date and the time for email
     const time = new Date(activeEmail.time).toLocaleTimeString();
     const date = new Date(activeEmail.time).toLocaleDateString();
 

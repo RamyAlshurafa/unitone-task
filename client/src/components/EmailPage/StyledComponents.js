@@ -48,6 +48,14 @@ export const EmailSummaryWrapper = styled.div`
   min-height: 68px;
   align-items: center;
   box-shadow: 0px 0px 5px -2px #888888;
+  background-color: ${(props) => {
+    if (props.active) {
+      return '#57a2ff6b';
+    } if (props.new) {
+      return '#e6e6e6a3';
+    }
+    return '#fff';
+  }}
 `;
 
 export const FirstLetter = styled.span`
