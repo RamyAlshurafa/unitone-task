@@ -16,6 +16,7 @@ Getting up and running is as easy as 1, 2, 3.
     ```
     cd unit-one-task
     npm install
+    cd client && npm i
     ```
 3.  Create MySQl DB and user, then add them into `/config/default.json`
     ```json
@@ -25,12 +26,19 @@ Getting up and running is as easy as 1, 2, 3.
     }
     ```
 
-4. Start back-end and front-end concurrently
+4. Intialize the fake data:
+   ```
+   npm run build:db
+   ```
+
+
+5. Start back-end and front-end concurrently
 
     ```
     npm run dev
     ```
-5. Enjoy the app on:
+    
+6. Enjoy the app on:
 
     [http://localhost:3000/](http://localhost:3000/)
     
